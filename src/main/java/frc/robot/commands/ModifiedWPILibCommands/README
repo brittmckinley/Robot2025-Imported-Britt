@@ -1,0 +1,4 @@
+Modified classes in wpilib
+Most of the modification is to change commands being created from compile time to run time
+In other terms, the trajectories or subsequential commands are created during run time (when auto is turned on, or when the controller commands are enabled), not when the robot is turned on (as it usually is for WPILIB)
+This means that the code can tell the robot to do things with trajectories created at run time (and thus we can use the current robot position to go somewhere/align with places) as well as make the auto moduler
